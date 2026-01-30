@@ -36,13 +36,13 @@ public class SinglyLinkedList<E> implements Cloneable {
    * element and to the subsequent node in the list (or null if this
    * is the last node).
    */
-  private static class Node<E> {
+  static class Node<E> {
 
     /** The element stored at this node */
     private E element;            // reference to the element stored at this node
 
     /** A reference to the subsequent node in the list */
-    private Node<E> next;         // reference to the subsequent node in the list
+    Node<E> next;         // reference to the subsequent node in the list
 
     /**
      * Creates a node with the given element and next node.
@@ -79,10 +79,10 @@ public class SinglyLinkedList<E> implements Cloneable {
 
   // instance variables of the SinglyLinkedList
   /** The head node of the list */
-  private Node<E> head = null;               // head node of the list (or null if empty)
+  Node<E> head = null;               // head node of the list (or null if empty)
 
   /** The last node of the list */
-  private Node<E> tail = null;               // last node of the list (or null if empty)
+  Node<E> tail = null;               // last node of the list (or null if empty)
 
   /** Number of nodes in the list */
   private int size = 0;                      // number of nodes in the list
