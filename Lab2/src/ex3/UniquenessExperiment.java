@@ -66,39 +66,3 @@ public class UniquenessExperiment {
         System.out.println("Largest n for unique2 under 60s: " + max2);
     }
 }
-
-/*
-private static long measureTime(int n, boolean useUnique1) {
-        int[] data = generateArray(n);
-        long start = System.currentTimeMillis();
-
-        if (useUnique1)
-            Uniqueness.unique1(data);
-        else
-            Uniqueness.unique2(data);
-
-        long end = System.currentTimeMillis();
-        return end - start;
-    }
-
-    private static int findMaxN(boolean useUnique1) {
-        int low = 1;
-        int high = 100_000;
-        int best = 0;
-
-        while (low <= high) {
-            int mid = low + (high - low) / 2;
-
-            long time = measureTime(mid, useUnique1);
-            System.out.println("n = " + mid + " took " + time + " ms");
-
-            if (time <= TIME_LIMIT) {
-                best = mid;
-                low = mid + 1;
-            } else  {
-                high = mid - 1;
-            }
-        }
-        return best;
-    }
- */
