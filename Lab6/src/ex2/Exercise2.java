@@ -29,12 +29,5 @@ public class Exercise2 {
         System.out.printf("%nKey: \"%s\" (never inserted)%n", key3);
         System.out.printf(" get()       = %s%n", map.get(key3));
         System.out.printf(" containKey() = %b   (expected: false - key NOT present)%n", map.containKey(key3));
-
-        System.out.println();
-        System.out.println("-".repeat(55));
-        System.out.println("Conclusion");
-        System.out.println("  get(\"banana\") and get (\"mango\") both return null,");
-        System.out.println("  but containKey() correctly distinguishes them.");
-        System.out.println("-".repeat(55));
     }
 }

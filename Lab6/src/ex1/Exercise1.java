@@ -51,12 +51,5 @@ public class Exercise1 {
             runExperiment("ProbeHashMap", new ProbeHashMap<>(INITIAL_CAP, load), load, rand);
             System.out.println("-".repeat(70));
         }
-
-        System.out.println();
-        System.out.println("Notes:");
-        System.out.println(" - Lower load factor = more resizing = more memory, but fewer collisions.");
-        System.out.println(" - Higher load factor = fewer resizing = denser table, but more collisions.");
-        System.out.println(" - ProbeHashMap degrades faster at high loads due to clustering.");
-        System.out.println(" - ChainHashMap handles high loads more gracefully via chaining.");
     }
 }
